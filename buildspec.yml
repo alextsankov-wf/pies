@@ -3,10 +3,12 @@ version: 0.1
 phases:
   pre_build:
     commands:
+      - echo FOO
       - echo Pre-build...
   build:
     commands:
       - echo Build started on `date` 
   post_build:
     commands:
+      - echo BAR
       - echo Build completed on `date` 
